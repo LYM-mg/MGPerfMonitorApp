@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		85FFB9312EA9D6B0005E9E8E /* MGPerfMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = 85FFB9302EA9D6B0005E9E8E /* MGPerfMonitor */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		856D7CED2EA9CA8900DF2934 /* MGPerfMonitorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGPerfMonitorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FFB9312EA9D6B0005E9E8E /* MGPerfMonitor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = MGPerfMonitorApp;
 			packageProductDependencies = (
+				85FFB9302EA9D6B0005E9E8E /* MGPerfMonitor */,
 			);
 			productName = MGPerfMonitorApp;
 			productReference = 856D7CED2EA9CA8900DF2934 /* MGPerfMonitorApp.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 856D7CE42EA9CA8900DF2934;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				85FFB92F2EA9D6B0005E9E8E /* XCRemoteSwiftPackageReference "MGPerfMonitorApp" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 856D7CEE2EA9CA8900DF2934 /* Products */;
 			projectDirPath = "";
@@ -152,6 +161,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -179,6 +189,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85FFB92F2EA9D6B0005E9E8E /* XCRemoteSwiftPackageReference "MGPerfMonitorApp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LYM-mg/MGPerfMonitorApp.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85FFB9302EA9D6B0005E9E8E /* MGPerfMonitor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85FFB92F2EA9D6B0005E9E8E /* XCRemoteSwiftPackageReference "MGPerfMonitorApp" */;
+			productName = MGPerfMonitor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 856D7CE52EA9CA8900DF2934 /* Project object */;
 }

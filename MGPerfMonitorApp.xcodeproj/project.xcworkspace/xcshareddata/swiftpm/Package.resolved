@@ -1,0 +1,15 @@
+{
+  "originHash" : "defacba2a169dc7e66cc91c60ecf32ba1056ff97aa2438d5dfd9c932c8f39efc",
+  "pins" : [
+    {
+      "identity" : "mgperfmonitorapp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/LYM-mg/MGPerfMonitorApp.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "05f63729ae38834a6baebfc31802da5159e02f33"
+      }
+    }
+  ],
+  "version" : 3
+}

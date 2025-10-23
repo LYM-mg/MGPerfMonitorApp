@@ -6,14 +6,30 @@
 //
 
 import UIKit
+import MGPerfMonitor
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // 启动联合监控
+        MGPerfMonitor.shared.start()
+
+        // HUD
+        MGPerfMonitor.shared.showHUD()
+
+        // Combine 订阅
+        let cancellable = MGPerfMonitor.shared.combinedPublisher.sink { fps, lag in
+            print("FPS: \(fps) | Lag: \(lag)")
+        }
+
+        // Logger 上报
+        MGPerfLogger.shared.onUpload = { line in
+            // 上传到服务器
+            print("Log upload: \(line)")
+        }
+        
         return true
     }
 
