@@ -24,7 +24,7 @@ public final class MGPerfMonitor {
             guard let self = self else { return }
             let stack = MGStackSampler.sampleMainThreadSymbolized().joined(separator: "\n")
             MGPerfLogger.shared.log("Lag \(duration)s:\n\(stack)")
-//            self.combinedSubject.send((MGFPSMonitor.shared.publisher.value ?? 0, true))
+            self.combinedSubject.send((MGFPSMonitor.shared.currentValue ?? 0, true))
         }.store(in: &cancellables)
     }
     

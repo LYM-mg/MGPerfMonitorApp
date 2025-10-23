@@ -14,10 +14,14 @@ public final class MGFPSMonitor {
     private var displayLink: CADisplayLink?
     private var lastTimestamp: CFTimeInterval = 0
     private var frameCount: Int = 0
-    private let subject = PassthroughSubject<Int, Never>()
+    private let subject = CurrentValueSubject<Int, Never>(0)
     public var publisher: AnyPublisher<Int, Never> { subject.eraseToAnyPublisher() }
     
     private init() {}
+    
+    public var currentValue: Int {
+        subject.value
+    }
     
     public func start() {
         guard displayLink == nil else { return }
