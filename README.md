@@ -11,3 +11,5 @@ MGPerfMonitor/
 │  ├─ MGPerfHUD.swift            // 可拖拽 / 可折叠 HUD
 │  ├─ MGPerfLogger.swift         // 日志写入 + 轮转 + 上报
 │  └─ MGStackSampler.swift       // 精确堆栈符号化
+
+<img width="980" height="341" alt="image" src="https://github.com/user-attachments/assets/5b35607c-f111-4447-b2a0-d146e80e21f4" />
