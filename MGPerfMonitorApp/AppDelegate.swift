@@ -16,8 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 启动联合监控
         MGPerfMonitor.shared.start()
 
-        // HUD
-        MGPerfMonitor.shared.showHUD()
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+            // HUD
+            MGPerfMonitor.shared.showHUD()
+        }
 
         // Combine 订阅
         let cancellable = MGPerfMonitor.shared.combinedPublisher.sink { fps, lag in
