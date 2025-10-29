@@ -7,6 +7,7 @@
 
 import Foundation
 import Darwin
+import RunTime
 
 public final class MGStackSampler {
     public static func sampleMainThreadSymbolized() -> [String] {
@@ -38,5 +39,17 @@ public final class MGStackSampler {
         // 这里只返回占位符
         return addresses.map { "Symbolicated <\($0)>" }
     }
+    
+    
+    public static func getSymbolicated() {
+        do {
+            if let frames = try? Backtrace.capture().symbolicated()?.frames {
+                print(frames)
+            } else {
+                print("Failed to capture backtrace.")
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
 }
-
