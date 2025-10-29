@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MGPerfMonitor
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         Thread.sleep(forTimeInterval: 2)
+        
+//        MGStackSampler
     }
 
 }
