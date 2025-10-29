@@ -7,7 +7,6 @@
 
 import Foundation
 import Darwin
-import RunTime
 
 public final class MGStackSampler {
     public static func sampleMainThreadSymbolized() -> [String] {
@@ -41,15 +40,15 @@ public final class MGStackSampler {
     }
     
     
-    public static func getSymbolicated() {
-        do {
-            if let frames = try? Backtrace.capture().symbolicated()?.frames {
-                print(frames)
-            } else {
-                print("Failed to capture backtrace.")
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
+//    public static func getSymbolicated() {
+//        do {
+//            if let frames = try? Backtrace.capture().symbolicated()?.frames {
+//                print(frames)
+//            } else {
+//                print("Failed to capture backtrace.")
+//            }
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//    }
 }

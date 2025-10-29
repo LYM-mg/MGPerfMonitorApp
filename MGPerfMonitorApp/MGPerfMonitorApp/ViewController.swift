@@ -19,9 +19,7 @@ class ViewController: UIViewController {
         super.touchesBegan(touches, with: event)
         Thread.sleep(forTimeInterval: 2)
         
-        MGStackSampler.getSymbolicated()
         MGStackSampler.sampleMainThreadSymbolized()
     }
-
 }
 

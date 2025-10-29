@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		85CFC2522EB2084E00885484 /* MGPerfMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = 85CFC2512EB2084E00885484 /* MGPerfMonitor */; };
 		85CFC2552EB208DC00885484 /* MGPerfMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = 85CFC2542EB208DC00885484 /* MGPerfMonitor */; };
-		85CFC2682EB20BC300885484 /* MGPerfMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = 85CFC2672EB20BC300885484 /* MGPerfMonitor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B22366F28B46B9F0065F715 /* MGPerfMonitor */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MGPerfMonitor; path = ..; sourceTree = "<group>"; };
 		856D7CED2EA9CA8900DF2934 /* MGPerfMonitorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGPerfMonitorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -42,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85CFC2682EB20BC300885484 /* MGPerfMonitor in Frameworks */,
 				85CFC2552EB208DC00885484 /* MGPerfMonitor in Frameworks */,
 				85CFC2522EB2084E00885484 /* MGPerfMonitor in Frameworks */,
 			);
@@ -51,9 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8B1CD828A21511000A7426 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1B22366F28B46B9F0065F715 /* MGPerfMonitor */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		856D7CE42EA9CA8900DF2934 = {
 			isa = PBXGroup;
 			children = (
+				1B8B1CD828A21511000A7426 /* Packages */,
 				856D7CEF2EA9CA8900DF2934 /* MGPerfMonitorApp */,
 				856D7CEE2EA9CA8900DF2934 /* Products */,
 			);
@@ -89,7 +97,6 @@
 			packageProductDependencies = (
 				85CFC2512EB2084E00885484 /* MGPerfMonitor */,
 				85CFC2542EB208DC00885484 /* MGPerfMonitor */,
-				85CFC2672EB20BC300885484 /* MGPerfMonitor */,
 			);
 			productName = MGPerfMonitorApp;
 			productReference = 856D7CED2EA9CA8900DF2934 /* MGPerfMonitorApp.app */;
@@ -120,7 +127,6 @@
 			mainGroup = 856D7CE42EA9CA8900DF2934;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				85CFC2662EB20BC300885484 /* XCRemoteSwiftPackageReference "MGPerfMonitorApp" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 856D7CEE2EA9CA8900DF2934 /* Products */;
@@ -351,17 +357,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		85CFC2662EB20BC300885484 /* XCRemoteSwiftPackageReference "MGPerfMonitorApp" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/LYM-mg/MGPerfMonitorApp.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		85CFC2512EB2084E00885484 /* MGPerfMonitor */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -369,11 +364,6 @@
 		};
 		85CFC2542EB208DC00885484 /* MGPerfMonitor */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MGPerfMonitor;
-		};
-		85CFC2672EB20BC300885484 /* MGPerfMonitor */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 85CFC2662EB20BC300885484 /* XCRemoteSwiftPackageReference "MGPerfMonitorApp" */;
 			productName = MGPerfMonitor;
 		};
 /* End XCSwiftPackageProductDependency section */
