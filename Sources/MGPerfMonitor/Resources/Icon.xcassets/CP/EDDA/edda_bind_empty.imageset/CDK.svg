@@ -1,0 +1,9 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40.7808 67.2621C42.0522 61.8364 46.8916 58 52.4643 58H107.536C113.108 58 117.948 61.8364 119.219 67.2621L129 109H31L40.7808 67.2621Z" fill="#988B68"/>
+<rect x="31" y="109" width="98" height="14" fill="#988B68"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M67.0121 109H31V125C31 131.627 36.3726 137 43 137H117C123.627 137 129 131.627 129 125V109H92.9879C92.692 115.119 86.9903 120 80 120C73.0097 120 67.308 115.119 67.0121 109Z" fill="#3F3824"/>
+<line y1="-1.5" x2="8.48528" y2="-1.5" transform="matrix(0 -1 -1 0 80 27.4854)" stroke="#E3D5B7" stroke-width="3"/>
+<line x1="48.5607" y1="27.9393" x2="54.5607" y2="33.9393" stroke="#E3D5B7" stroke-width="3"/>
+<line y1="-1.5" x2="8.48528" y2="-1.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 113.5 29)" stroke="#E3D5B7" stroke-width="3"/>
+<circle cx="80" cy="66" r="26" stroke="#E3D5B7" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

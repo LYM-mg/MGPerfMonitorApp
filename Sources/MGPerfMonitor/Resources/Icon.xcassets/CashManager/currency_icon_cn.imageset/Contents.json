@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "currency_icon_cn.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

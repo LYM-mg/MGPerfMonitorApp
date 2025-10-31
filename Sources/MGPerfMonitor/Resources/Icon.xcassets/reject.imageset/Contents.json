@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "reject.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

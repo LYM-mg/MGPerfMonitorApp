@@ -1,0 +1,10 @@
+<svg width="161" height="160" viewBox="0 0 161 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.2808 67.2621C42.5522 61.8364 47.3916 58 52.9643 58H108.036C113.608 58 118.448 61.8364 119.719 67.2621L129.5 109H31.5L41.2808 67.2621Z" fill="#D7E1E8"/>
+<rect x="31.5" y="109" width="98" height="14" fill="#D7E1E8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M67.5121 109H31.5V125C31.5 131.627 36.8726 137 43.5 137H117.5C124.127 137 129.5 131.627 129.5 125V109H93.4879C93.192 115.119 87.4903 120 80.5 120C73.5097 120 67.808 115.119 67.5121 109Z" fill="#F3F8FB"/>
+<line y1="-1.5" x2="8.48528" y2="-1.5" transform="matrix(0 -1 -1 0 80.5 27.4852)" stroke="#9BC4E3" stroke-width="3"/>
+<line x1="49.0607" y1="27.9393" x2="55.0607" y2="33.9393" stroke="#9BC4E3" stroke-width="3"/>
+<line y1="-1.5" x2="8.48528" y2="-1.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 114 29)" stroke="#9BC4E3" stroke-width="3"/>
+<circle cx="80.5" cy="66" r="26" fill="#9BC4E3" stroke="#9BC4E3" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M66 64.6891L76.5455 75.2345L95 56.78" stroke="white" stroke-width="5.27273" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

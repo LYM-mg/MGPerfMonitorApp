@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "position_pie_chart.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

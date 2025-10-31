@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		859FD50C2EB4597C004617FB /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 859FD50B2EB4597C004617FB /* RswiftLibrary */; };
 		85CFC2522EB2084E00885484 /* MGPerfMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = 85CFC2512EB2084E00885484 /* MGPerfMonitor */; };
 		85CFC2552EB208DC00885484 /* MGPerfMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = 85CFC2542EB208DC00885484 /* MGPerfMonitor */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 			files = (
 				85CFC2552EB208DC00885484 /* MGPerfMonitor in Frameworks */,
 				85CFC2522EB2084E00885484 /* MGPerfMonitor in Frameworks */,
+				859FD50C2EB4597C004617FB /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +87,12 @@
 				856D7CE92EA9CA8900DF2934 /* Sources */,
 				856D7CEA2EA9CA8900DF2934 /* Frameworks */,
 				856D7CEB2EA9CA8900DF2934 /* Resources */,
+				859FD4E62EB451BE004617FB /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				859FD52A2EB46124004617FB /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				856D7CEF2EA9CA8900DF2934 /* MGPerfMonitorApp */,
@@ -97,6 +101,7 @@
 			packageProductDependencies = (
 				85CFC2512EB2084E00885484 /* MGPerfMonitor */,
 				85CFC2542EB208DC00885484 /* MGPerfMonitor */,
+				859FD50B2EB4597C004617FB /* RswiftLibrary */,
 			);
 			productName = MGPerfMonitorApp;
 			productReference = 856D7CED2EA9CA8900DF2934 /* MGPerfMonitorApp.app */;
@@ -127,6 +132,7 @@
 			mainGroup = 856D7CE42EA9CA8900DF2934;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				859FD50A2EB4597C004617FB /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 856D7CEE2EA9CA8900DF2934 /* Products */;
@@ -148,6 +154,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		859FD4E62EB451BE004617FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		856D7CE92EA9CA8900DF2934 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -157,6 +184,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		859FD52A2EB46124004617FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 859FD5292EB46124004617FB /* RswiftGenerateInternalResources */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		856D7D012EA9CA8A00DF2934 /* Debug */ = {
@@ -267,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -324,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -357,7 +391,28 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		859FD50A2EB4597C004617FB /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		859FD50B2EB4597C004617FB /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 859FD50A2EB4597C004617FB /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		859FD5292EB46124004617FB /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 859FD50A2EB4597C004617FB /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
 		85CFC2512EB2084E00885484 /* MGPerfMonitor */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MGPerfMonitor;
