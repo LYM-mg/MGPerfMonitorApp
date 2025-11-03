@@ -1,5 +1,5 @@
 {
-  "originHash" : "4786765df26cc84c68849ce038b6745f890ca95c59e1510520c88aa5211f34d2",
+  "originHash" : "c6f2daa2fcecc31950a190e731adbec8915bf67f81342522a6ff36531960302d",
   "pins" : [
     {
       "identity" : "devicekit",
@@ -8,6 +8,24 @@
       "state" : {
         "revision" : "581df61650bc457ec00373a592a84be3e7468eb1",
         "version" : "5.7.0"
+      }
+    },
+    {
+      "identity" : "jxpagingview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pujiaxin33/JXPagingView.git",
+      "state" : {
+        "revision" : "a55dd07adfa9729677e2287943af5aa40f5df31f",
+        "version" : "2.1.3"
+      }
+    },
+    {
+      "identity" : "jxsegmentedview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pujiaxin33/JXSegmentedView",
+      "state" : {
+        "revision" : "fbbf965d7396bd99ac1ce88a80b6c950b85313f6",
+        "version" : "1.4.1"
       }
     },
     {
